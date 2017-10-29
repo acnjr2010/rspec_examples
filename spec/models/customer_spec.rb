@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Customer, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "Create a customer" do
+  	customer = create(:customer)
+  	expect(customer.full_name).to eq("Sr. Antonio Carlos")
+  end
 end
